@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #181e4b;
+  --yellow-color: #f1a501;
+  --txt-color: #5e6282;
+  --white: #fff;
+  --grey: #ededed;
+  --dark: #3f3b38;
+  --app-bg: #f9f7fe;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Volkov-bold", sans-serif;
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+/****************************
+ font-size:
+ 10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
+ ****************************/
+/****************************
+whitespace:
+2/4/8/12/16/24/32/48/64/80/96/128 
+****************************/
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: var(--app-bg);
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.primary__txt {
+  color: var(--txt-color);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+.primary__title{
+    color: var(--secondary-color);
+    font-size: 4.8rem;
+    line-height: 1.6;
+    font-family: "Volkov-bold";
+    font-weight: 800;
+}
+.hero-btn__txt{
+    font: 1.6rem;
+    font-weight: 600;
+}
+.main__btn {
+  display: inline-block;
+  padding: 1.6rem 2.4rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,533 @@
+/****************************
+ main-header
+ ****************************/
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.main-header::before {
+  background-image: url(../images/svgs/Decore.svg);
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: -5rem;
+  right: -25rem;
+  width: 100rem;
+  height: 80rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.logo-web img {
+  width: 12rem;
+}
+.main-list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--dark);
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #181e4b;
+}
+.main-nav-link.login_btn {
+  margin-left: 6rem;
+}
+.singup-btn {
+  border: 2px solid var(--dark);
+  padding: 1rem 2.4rem;
+  border-radius: 1rem;
+  transition: all 0.3ms ease-in-out;
+}
+.singup-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+/* mobile */
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+z-index: 1;
+  display: none;
+}
+.btn-mobile-icon{
+  font-size: 3.2rem;
+  color: #4d4d4d;
+}
+.btn-mobile-icon[name="close-outline"]{
+  display: none;
+}
+
+/****************************
+ hero-section
+ ****************************/
+
+.hero__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+.hero__content {
+  max-width: 60rem;
+}
+.hero__description {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero__title {
+  color: var(--secondary-color);
+  font-size: 9.2rem;
+  font-weight: 700;
+  font-family: "Volkov-bold";
+  word-spacing: -4px;
+  margin: 2.4rem auto;
+}
+.hero__title strong {
+  position: relative;
+  z-index: -1;
+}
+.hero__title strong::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 0.9rem;
+  background-color: var(--primary-color);
+  bottom: -2rem;
+  left: 0;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  z-index: -1;
+}
+.hero__btn--yellow {
+  background-color: var(--yellow-color);
+  color: var(--white);
+  margin-right: 3.2rem;
+  box-shadow: 0 0 2rem hsla(41, 99%, 29%, 0.566);
+}
+.hero-btn__icon {
+  background-color: var(--primary-color);
+  padding: 0.8rem 1rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  color: var(--white);
+  margin-right: 1.2rem;
+  box-shadow: 0 0 5rem #8b433199;
+}
+.demo {
+  font-weight: 600;
+}
+
+.hero__img img {
+  width: 60rem;
+  height: 60rem;
+}
+/****************************
+category-section
+ ****************************/
+.category {
+  text-align: center;
+  margin-top: 12.8rem;
+}
+.category::before {
+  background-image: url(../images/svgs/Group\ 4.svg);
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20rem;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/****************************
+Services
+ ****************************/
+.Services {
+  display: grid;
+  grid-template-columns: repeat(4, 25rem);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4.8rem;
+  margin: 2rem auto;
+}
+.service {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 3rem;
+  position: relative;
+  gap: 0;
+  padding: 0.8rem 1.6rem;
+}
+.service:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--primary-color);
+  bottom: -2rem;
+  left: -2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 1rem;
+  margin: 1rem auto;
+  z-index: -1;
+}
+.service__img {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+}
+.plane{
+  width: 10rem;
+  height: 10rem;
+}
+.service__img::before {
+  content: "";
+  background-color: var(--bg-color);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.service__title {
+  color: var(--secondary-color);
+  font-family: "Volkov-bold";
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+.service__txt {
+  margin: 1.6rem auto;
+}
+/****************************
+Destinations
+ ****************************/
+.Destinations {
+  text-align: center;
+  margin-top: 12.8rem;
+}
+
+.places {
+  display:grid;
+  grid-template-columns: repeat(4 , 1fr);
+  max-width: 130rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin: 3.2rem auto;
+  position: relative;
+}
+
+.place {
+  background-color: var(--white);
+  margin-right: 1.2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 1.2rem;
+  object-fit: cover;
+}
+.place__img img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 1rem;
+}
+.place__description {
+  padding: 1rem;
+  text-align: center;
+}
+.place__txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.place__txt span {
+  display: inline-block;
+}
+.place-deadline{
+  font-size: 1.6rem;
+  border:  var(--txt-color) 2px solid;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
+/****************************
+booking
+ ****************************/
+
+.booking {
+  max-width: 130rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  margin: 12.8rem auto;
+}
+.booking-description{
+ margin-right: 4.8rem;
+ max-width: 45rem;
+
+}
+.booking__title {
+  line-height: 1.2;
+  margin-top: 1.6rem;
+}
+.booking-feature{
+  margin-top: 2.4rem;
+  display: flex;
+align-items: center;}
+.svg--yellow{
+  background-color: #f0bb1f;
+  margin-right: 1.2rem;
+  border-radius: 1rem;
+padding: 0.8rem 1rem;
+}
+.svg--orange{
+ background-color: #f15a2b; 
+ margin-right: 1.2rem;
+ border-radius: 1rem;
+padding: 0.8rem 1rem;
+
+}
+.svg--blue{
+  background-color: #006380;
+  margin-right: 1.2rem;
+  border-radius: 1rem;
+ padding: 0.8rem 1rem;
+ 
+}
+/****************************
+card
+ ****************************/
+.booking__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  box-shadow:  0 0 2rem hsla(194, 100%, 18%, 0.49);
+}
+.card__txt{
+  margin-bottom: 1.2rem ;
+}
+.card__img{
+  position: relative;
+}
+.heart__icon{
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  background-color: var(--white); 
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
+
+}
+.card__title{
+  color:  var(--txt-color);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-top: 1.4rem ;
+  margin-bottom: 1.4rem;
+}
+.card__icon{
+  margin-bottom: 1.4rem;
+}
+.card__icon div{
+  background-color:#ddddddc8;
+  border-radius: 2rem;
+ padding: 0.8rem 1rem;
+
+}
+.card-detail ,
+.card__icon{
+  display: flex;
+  gap: 0.8rem;
+
+}
+/****************************
+Subscribe
+ ****************************/
+.Subscribe{
+  background-color: var(--white);
+  max-width: 130rem;
+  margin: 0rem auto 9.6rem auto;
+  text-align: center;
+  position: relative;
+  padding:  2.4rem;
+  border-radius: 2rem;
+border-top-left-radius: 10rem;
+box-shadow:  0 0 2rem hsla(236, 79%, 70%, 0.353);
+}
+.Subscribe::before {
+  overflow: hidden;
+  background-image: url(../images/svgs/Group\ 42.svg );
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0rem;
+  right: -5rem;
+  width: 20rem;
+  height: 20rem;
+  transform: rotate(-90deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+}
+.Subscribe::after {
+  overflow: hidden;
+  background-image: url(../images/svgs/Group\ 42.svg );
+  background-size: cover;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0rem;
+  width: 30rem;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+}
+
+
+
+.send__icon{
+position: absolute;
+background: linear-gradient(45deg ,#5E3BE1 ,#747DEF ); 
+margin-right: 1.2rem;
+border-radius: 10rem;
+padding: 0.8rem 1rem;
+right: -3rem;
+top: -2rem;
+}
+.Subscribe__title{
+  max-width: 100rem;
+  margin: 3.2rem auto;
+  color:  var(--txt-color);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.8rem 4.8rem;
+}
+.Subscribe__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  height: 100%;
+  width: 100%;
+  margin: 2.4rem auto;
+  position: relative;
+
+}
+.Subscribe__inp {
+  border: none;
+  height: 8rem;
+  background-color:var(--grey) ;
+  box-shadow:  0 0 2rem hsla(236, 79%, 70%, 0.19);
+  width: 50%;
+  border-radius: 2rem;
+z-index: 3;
+}
+.Subscribe__inp::placeholder{
+  font-size: 1.8rem;
+  padding-left: 1.4rem;
+
+}
+
+.Subscribe__icon{
+  position: absolute;
+  left: 28rem;
+  top: 3rem;
+
+}
+.Subscribe__btn{
+  border: none;
+  height: 6rem;
+  width: 16rem;
+  border-radius: 2rem;
+font-size: 1.6rem;
+color: var(--white);
+background: linear-gradient(90deg ,#5f3be1d3 ,#747DEF ); 
+}
+/****************************
+footer
+ ****************************/
+.footer{
+  box-shadow:  0 0 1rem hsla(236, 79%, 70%, 0.19);
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  max-width: 130rem;  
+margin: 1.4rem auto 0 auto;
+padding:  2.4rem ;
+}
+.footer__icon{
+  background-color:var(--white);
+  border-radius: 2rem;
+ padding: 0.8rem 1rem;
+
+}
+
+.footer-logo{
+margin-bottom: 1.4rem;
+}
+.footer-nav__title{
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.footer-nav__link{
+  display: block;
+color: var(--dark);
+font-size: 1.4rem;
+margin-top: 1.4rem;
+}
+.footer-logo__box{
+  display: flex;
+  gap: 1.4rem;
+margin-bottom: 1rem;
+}
+.footer-app{
+  display: flex;
+  margin: 1.4rem 0;
+}
+.footer-app img{
+  width: 8rem ;
+  height: 3rem;
+  border-radius: 1rem;
+  margin-right: 1.2rem;
+}
